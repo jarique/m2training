@@ -17,6 +17,7 @@ class Index extends \Magento\Framework\App\Action\Action
         \Magento\Framework\Controller\Result\RawFactory $resultRawFactory
     ) {
         $this->resultRawFactory = $resultRawFactory;
+
         parent::__construct($context);
     }
 
