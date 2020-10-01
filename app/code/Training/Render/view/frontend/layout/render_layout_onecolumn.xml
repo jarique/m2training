@@ -3,4 +3,13 @@
     <head>
         <title>Success page</title>
     </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="topinfo" template="Training_Render::topinfo.phtml">
+                <arguments>
+                    <argument name="background_color" xsi:type="string">lightskyblue</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
 </page>
