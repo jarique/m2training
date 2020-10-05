@@ -11,5 +11,6 @@
                 </arguments>
             </block>
         </referenceContainer>
+        <referenceBlock name="testargument" remove="true"/>
     </body>
 </page>
