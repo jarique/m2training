@@ -4,7 +4,7 @@ namespace Training\Test\Block;
 
 class Test extends \Magento\Framework\View\Element\AbstractBlock
 {
-    public function toHtml()
+    protected function _toHtml()
     {
         return '<b>Hello from block!</b>';
     }

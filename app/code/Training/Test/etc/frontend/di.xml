@@ -14,15 +14,4 @@
     <type name="Magento\Catalog\Block\Product\View\Description">
         <plugin name="product-view-description-plugin" type="Training\Test\Plugin\Block\Product\View\Description"/>
     </type>
-
-    <type name="Magento\Framework\App\Router\NoRouteHandlerList">
-        <arguments>
-            <argument name="handlerClassesList" xsi:type="array">
-                <item name="default" xsi:type="array">
-                    <item name="class" xsi:type="string">Training\Test\App\Router\NoRouteHandler</item>
-                    <item name="sortOrder" xsi:type="string">100</item>
-                </item>
-            </argument>
-        </arguments>
-    </type>
 </config>

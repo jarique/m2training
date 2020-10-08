@@ -10,16 +10,6 @@ use Psr\Log\LoggerInterface;
 class FrontController extends \Magento\Framework\App\FrontController
 {
     /**
-     * @var RouterListInterface
-     */
-    protected $routerList;
-
-    /**
-     * @var ResponseInterface
-     */
-    protected $response;
-
-    /**
      * @var LoggerInterface
      */
     private $logger;
@@ -35,8 +25,6 @@ class FrontController extends \Magento\Framework\App\FrontController
         ResponseInterface $response,
         LoggerInterface $logger
     ) {
-        $this->routerList = $routerList;
-        $this->response = $response;
         $this->logger = $logger;
 
         parent::__construct($routerList, $response);
@@ -47,7 +35,7 @@ class FrontController extends \Magento\Framework\App\FrontController
      */
     public function dispatch(RequestInterface $request)
     {
-        foreach ($this->routerList as $router) {
+        foreach ($this->_routerList as $router) {
             $this->logger->info(get_class($router));
         }
 
