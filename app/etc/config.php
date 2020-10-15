@@ -299,6 +299,7 @@ return [
         'Training_TestOM' => 1,
         'Training_Dependency2' => 1,
         'Training_Dependency' => 1,
+        'Training_Feedback' => 1,
         'Training_Js' => 1,
         'Training_Render' => 1,
         'Training_Test' => 1,
