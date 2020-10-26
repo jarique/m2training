@@ -2,7 +2,7 @@
 
 namespace Training\Feedback\Controller\Index;
 
-class Form extends \Magento\Framework\App\Action\Action
+class Index extends \Magento\Framework\App\Action\Action
 {
     /** @var \Magento\Framework\View\Result\PageFactory */
     private $resultPageFactory;

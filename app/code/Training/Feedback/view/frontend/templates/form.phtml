@@ -1,6 +1,9 @@
-<?php $viewModel = $block->getViewModel() ?>
+<?php
+/** @var \Training\Feedback\ViewModel\FeedbackForm $viewModel */
+$viewModel = $block->getViewModel()
+?>
 <form class="form contact"
-      action="<?= $block->escapeUrl($block->getActionUrl()) ?>"
+      action="<?= $block->escapeUrl($viewModel->getActionUrl()) ?>"
       id="feedback-form"
       method="post"
       data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"

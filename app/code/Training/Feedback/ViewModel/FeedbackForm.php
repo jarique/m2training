@@ -4,7 +4,7 @@ namespace Training\Feedback\ViewModel;
 
 class FeedbackForm implements \Magento\Framework\View\Element\Block\ArgumentInterface
 {
-    /** @var \Magento\Framework\UrlInterface  */
+    /** @var \Magento\Framework\UrlInterface */
     private $urlBuilder;
 
     /**
